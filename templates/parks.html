@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Parks Page</title>
+	</head>
+	<body>
+		{% for park in parks %}
+			<p>Name: {{ park['name'] }}</p>
+			<p>Location: {{ park['loc'] }}</p>
+			<p>Description: {{ park['desc'] }}</p>
+			<br><hr><br>
+		{% endfor %}
+	</body>
+</html>
